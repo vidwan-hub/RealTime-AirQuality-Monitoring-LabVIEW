@@ -15,10 +15,6 @@
 # CSV logs — normalize line endings for cross-platform use
 *.csv text eol=lf
 
-# Markdown and text files
-*.md text eol=lf
-*.txt text eol=lf
-
 # Prevent CRLF/line ending issues on Windows/Linux
 * text=auto
 
