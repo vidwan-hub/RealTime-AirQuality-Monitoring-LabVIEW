@@ -1,0 +1,27 @@
+# Treat LabVIEW files as binary — avoids corruption from text-based diffs
+*.vi binary
+*.ctl binary
+*.llb binary
+*.lvclass binary
+*.lvproj binary
+*.aliases binary
+*.lvlps binary
+
+# Arduino code as UTF-8 text (so GitHub shows it nicely)
+*.ino text eol=lf
+*.cpp text eol=lf
+*.h   text eol=lf
+
+# CSV logs — normalize line endings for cross-platform use
+*.csv text eol=lf
+
+# Markdown and text files
+*.md text eol=lf
+*.txt text eol=lf
+
+# Prevent CRLF/line ending issues on Windows/Linux
+* text=auto
+
+# Set default linguist language override (optional, if GitHub detects wrong primary language)
+*.vi linguist-language=LabVIEW
+*.ino linguist-language=Arduino
